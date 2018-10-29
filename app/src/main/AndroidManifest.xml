@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ivan.fgwallet">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.wri" />
+
+    <application
+        android:name=".WalletApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/appicon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/appicon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyD8dHPpA93WyrJoNhwFFvCEh5jkwyyEUts" />
+
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            android:theme="@style/My.Theme"
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".NewWalletActivtiy"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RestoreWalletActivtiy"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SmsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".InvestmentActivtiy"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WithdrawActivtiy"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SendBtcActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ReciveActivtiy"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ScannerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChangePasswordActivtiy"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RecoveryPhraseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RecoveryPhraseActivity1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RecoveryPhraseActivity2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RecoveryPhraseSettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RecoveryPhraseSettingActivity2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ContactSupportActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AboutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EnterPinActivtiy"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChangeLanguageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EnterRecoveryPhraseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TransactionDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".VerifyBlockChainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".schildbach.wallet.ui.NetworkMonitorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".schildbach.wallet.ui.ScanActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="landscape"
+            android:stateNotNeeded="true"
+            android:theme="@style/My.Theme.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".schildbach.wallet.ui.RequestCoinsActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:label="@string/request_coins_activity_title"
+            android:theme="@style/My.Theme.ChildActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".schildbach.wallet.ui.send.SendCoinsActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:label="@string/send_coins_activity_title"
+            android:theme="@style/My.Theme.ChildActivity"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter android:label="@string/send_coins_activity_title">
+                <action android:name="android.intent.action.VIEW" />
+
+                <data android:scheme="bitcoin" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+            <intent-filter android:label="@string/send_coins_activity_title">
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+
+                <data android:scheme="bitcoin" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter android:label="@string/send_coins_activity_title">
+                <action android:name="android.intent.action.VIEW" />
+
+                <data android:mimeType="application/bitcoin-paymentrequest" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter android:label="@string/send_coins_activity_title">
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+
+                <data android:mimeType="application/bitcoin-paymentrequest" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".schildbach.wallet.ui.SendCoinsQrActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".schildbach.wallet.ui.RequestCoinsActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:label="@string/request_coins_activity_title"
+            android:theme="@style/My.Theme.ChildActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".schildbach.wallet.ui.AddressBookActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:label="@string/address_book_activity_title"
+            android:theme="@style/My.Theme.ChildActivity" />
+        <activity
+            android:name=".schildbach.wallet.ui.ExchangeRatesActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:label="@string/exchange_rates_activity_title"
+            android:theme="@style/My.Theme.ChildActivity" />
+
+        <provider
+            android:name=".schildbach.wallet.data.AddressBookProvider"
+            android:authorities="com.ivan.fgwallet.address_book"
+            android:exported="false" />
+        <provider
+            android:name=".schildbach.wallet.data.ExchangeRatesProvider"
+            android:authorities="com.ivan.fgwallet.exchange_rates"
+            android:exported="false" />
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.ivan.fgwallet.file_attachment"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider" />
+        </provider>
+
+        <receiver
+            android:name=".schildbach.wallet.WalletBalanceWidgetProvider"
+            android:label="@string/appwidget_wallet_balance_title">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/wallet_balance_widget" />
+        </receiver>
+        <receiver android:name=".schildbach.wallet.service.BootstrapReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".schildbach.wallet.service.BlockchainServiceImpl"
+            android:exported="false" />
+        <service
+            android:name=".schildbach.wallet.offline.AcceptBluetoothService"
+            android:exported="false" />
+        <service
+            android:name=".schildbach.wallet.service.UpgradeWalletService"
+            android:exported="false" />
+        <service
+            android:name=".schildbach.wallet.service.InactivityNotificationService"
+            android:exported="false" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="a08e99a4ff127c000a587b50b8fdeb329b52d2b3" />
+
+        <activity
+            android:name=".ATMmapActivity"
+            android:label="@string/title_activity_atmmap"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".TransactionsHistoryActivity"></activity>
+    </application>
+
+</manifest>

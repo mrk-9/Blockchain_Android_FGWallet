@@ -1,0 +1,171 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/viewContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <include layout="@layout/tootlbar" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_reveiced_sent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sent"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tv_amount"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="0 BTC"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="Value when sent: 0"
+            android:layout_marginRight="10dp"
+            android:textColor="@android:color/white"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_transaction_fee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="Transaction fee: 0"
+            android:layout_marginRight="10dp"
+            android:textColor="@android:color/white"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_margin="10dp"
+            android:background="@android:color/white" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/transaction_memo"
+            android:layout_marginLeft="10dp"
+            android:textColor="@android:color/white"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tv_memo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No memo"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/gray"
+            android:textSize="16dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_margin="10dp"
+            android:background="@android:color/white" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/to"
+            android:layout_marginLeft="10dp"
+            android:textColor="@android:color/white"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tv_to"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My Bitcoin Wallet"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/gray"
+            android:textSize="16dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/from"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@android:color/white"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tv_from"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My Bitcoin Wallet"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/gray"
+            android:textSize="16dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_margin="10dp"
+            android:background="@android:color/white" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/date"
+            android:layout_marginLeft="10dp"
+            android:textColor="@android:color/white"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="20/12"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/gray"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:id="@+id/btn_verify"
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:singleLine="true"
+            android:background="@drawable/border_white"
+            android:textSize="20dp"
+            android:text="@string/verify_blockchain"/>
+    </LinearLayout>
+</LinearLayout>

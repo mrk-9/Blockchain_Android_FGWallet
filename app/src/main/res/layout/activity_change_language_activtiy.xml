@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.ivan.fgwallet.NewWalletActivtiy">
+    <include layout="@layout/tootlbar" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lin"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/wallet_ic" />
+
+
+    <LinearLayout
+        android:id="@+id/lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="50dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:text="@string/change_language"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rd_english"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@android:color/white"
+                android:padding="10dp"
+                android:text="English"
+                android:checked="true"
+                android:textColor="@android:color/white" />
+
+            <RadioButton
+                android:id="@+id/rd_japan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@android:color/white"
+                android:padding="10dp"
+                android:text="日本語"
+                android:textColor="@android:color/white" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/btn_ok"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border_white"
+            android:gravity="center"
+            android:text="OK"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

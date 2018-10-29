@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/viewContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+   >
+    <include layout="@layout/tootlbar" />
+
+    <LinearLayout
+        android:id="@+id/layout_otp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:gravity="center_horizontal"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:text="@string/title_recovery_phrase2"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="16dp" />
+        <TextView
+            android:id="@+id/tv_title_recovery"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="100dp"
+            android:gravity="center_horizontal"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:text="baby fix jaguar toss assist theme crater shrimp priority day bag mention"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/timestamp_creation"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="100dp"
+            android:gravity="center_horizontal"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:text="Timestamp creation:"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+
+
+
+    </LinearLayout>
+</RelativeLayout>

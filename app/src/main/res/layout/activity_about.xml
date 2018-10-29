@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical" >
+    <include layout="@layout/tootlbar" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lin"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="30dp"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/wallet_ic" />
+
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14dip"
+        android:padding="10dp"
+        android:text="FG Wallet Ver 1.0"
+        android:gravity="center"
+        android:textColor="@android:color/white"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14dip"
+        android:paddingBottom="10dp"
+        android:gravity="center"
+        android:text="copyright ©2017 Financial Gate LLC"
+        android:textColor="@android:color/white"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14dip"
+        android:gravity="center"
+        android:text="App Support: support@financial-gate.info"
+        android:textColor="@android:color/white"/>
+</LinearLayout>

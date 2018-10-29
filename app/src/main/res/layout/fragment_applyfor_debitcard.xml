@@ -1,0 +1,301 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context="com.ivan.fgwallet.Fragments.ApplyforDebitcard">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/lin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_margin="3dp"
+                android:text="Name"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="3dp"
+                android:background="@android:color/white"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textCursorDrawable="@drawable/color_cursor" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_margin="3dp"
+                android:text="Last Name"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/last_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="3dp"
+                android:background="@android:color/white"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textCursorDrawable="@drawable/color_cursor" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_margin="3dp"
+                android:text="DOB (DD-MM-YYYY)"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/birthday"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="3dp"
+                android:background="@android:color/white"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textCursorDrawable="@drawable/color_cursor" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Email Address"
+                android:layout_margin="3dp"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="3dp"
+                android:background="@android:color/white"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textCursorDrawable="@drawable/color_cursor" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_margin="3dp"
+                android:text="Address 1"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="3dp"
+                android:background="@android:color/white"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textCursorDrawable="@drawable/color_cursor" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_margin="3dp"
+                android:text="City"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="3dp"
+                android:background="@android:color/white"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textCursorDrawable="@drawable/color_cursor" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_margin="3dp"
+                android:text="Prefecture"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/perfecture"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="3dp"
+                android:background="@android:color/white"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textCursorDrawable="@drawable/color_cursor" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_margin="3dp"
+                android:text="Post Code"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/post_code"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="3dp"
+                android:background="@android:color/white"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textCursorDrawable="@drawable/color_cursor" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_margin="3dp"
+                android:text="Country Code"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/country_code"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="3dp"
+                android:background="@android:color/white"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textCursorDrawable="@drawable/color_cursor" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_margin="3dp"
+                android:text="Phone"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="3dp"
+                android:background="@android:color/white"
+                android:inputType="phone"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textCursorDrawable="@drawable/color_cursor" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_margin="3dp"
+                android:text="Mobile Phone"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/mobile_phone"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="3dp"
+                android:inputType="phone"
+                android:background="@android:color/white"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textCursorDrawable="@drawable/color_cursor" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_margin="3dp"
+                android:text="Upload Document 1 (ID)"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/img_document1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_margin="3dp"
+                android:src="@mipmap/gallery_normal"
+                android:textCursorDrawable="@drawable/color_cursor" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_margin="3dp"
+                android:text="Upload Document 2 (POA)"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <ImageView
+                android:id="@+id/img_document2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_margin="3dp"
+                android:singleLine="true"
+                android:src="@mipmap/gallery_normal"
+                android:textCursorDrawable="@drawable/color_cursor" />
+
+            <TextView
+                android:id="@+id/btn_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border_white"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:src="@mipmap/ic_btc"
+                android:text="Submit"
+                android:textColor="@android:color/white"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/viewContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <include layout="@layout/tootlbar" />
+
+    <LinearLayout
+        android:id="@+id/layout_otp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:gravity="center_horizontal"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:text="@string/msg_recovery2"
+            android:textColor="@android:color/white"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/wrist"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="wrist"
+                android:gravity="center"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/ice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="ice"
+                android:gravity="center"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/mushroom"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:gravity="center"
+                android:text="mushroom"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textSize="16dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="100dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/shift"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="shift"
+                android:gravity="center"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/tragic"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="tragic"
+                android:gravity="center"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/target"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:gravity="center"
+                android:text="target"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textSize="16dp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

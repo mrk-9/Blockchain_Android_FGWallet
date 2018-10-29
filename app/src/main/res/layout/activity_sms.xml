@@ -1,0 +1,298 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/viewContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+   >
+
+    <!--<com.arvind.fgwallet.helper.MyViewPager-->
+        <!--android:id="@+id/viewPagerVertical"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="fill_parent">-->
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/layout_sms"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@color/colorPrimary"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="60dp"-->
+                <!--android:layout_height="60dp"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:layout_marginBottom="25dp"-->
+                <!--android:layout_marginTop="100dp"-->
+                <!--android:src="@mipmap/applogo" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="25dp"-->
+                <!--android:gravity="center_horizontal"-->
+                <!--android:inputType="textCapWords"-->
+                <!--android:paddingLeft="40dp"-->
+                <!--android:paddingRight="40dp"-->
+                <!--android:text="@string/msg_enter_mobile"-->
+                <!--android:textColor="@android:color/white"-->
+                <!--android:textSize="14dp" />-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/inputName"-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginBottom="15dp"-->
+                    <!--android:background="@android:color/white"-->
+                    <!--android:fontFamily="sans-serif-light"-->
+                    <!--android:hint="@string/lbl_name"-->
+                    <!--android:padding="5dp"-->
+                    <!--android:singleLine="true"-->
+                    <!--android:textColor="@color/colorPrimary"-->
+                    <!--android:textSize="18dp" />-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/inputEmail"-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginBottom="15dp"-->
+                    <!--android:background="@android:color/white"-->
+                    <!--android:fontFamily="sans-serif-light"-->
+                    <!--android:hint="@string/lbl_email"-->
+                    <!--android:inputType="textEmailAddress"-->
+                    <!--android:padding="5dp"-->
+                    <!--android:textColor="@color/colorPrimary"-->
+                    <!--android:textSize="18dp" />-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/inputMobile"-->
+                    <!--android:layout_width="240dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@android:color/white"-->
+                    <!--android:fontFamily="sans-serif-light"-->
+                    <!--android:hint="@string/lbl_mobile"-->
+                    <!--android:inputType="phone"-->
+                    <!--android:maxLength="10"-->
+                    <!--android:padding="5dp"-->
+                    <!--android:textColor="@color/colorPrimary"-->
+                    <!--android:textCursorDrawable="@null"-->
+                    <!--android:textSize="18dp" />-->
+
+                <!--<Button-->
+                    <!--android:id="@+id/btn_request_sms"-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_horizontal"-->
+                    <!--android:layout_marginTop="25dp"-->
+                    <!--android:background="@color/colorPrimaryDark"-->
+                    <!--android:text="@string/lbl_next"-->
+                    <!--android:textColor="@android:color/white"-->
+                    <!--android:textSize="14dp" />-->
+            <!--</LinearLayout>-->
+
+
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/layout_otp"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:background="@color/colorPrimary"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="60dp"-->
+                <!--android:layout_height="60dp"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:layout_marginBottom="25dp"-->
+                <!--android:layout_marginTop="100dp"-->
+                <!--android:src="@mipmap/applogo" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="15dp"-->
+                <!--android:gravity="center_horizontal"-->
+                <!--android:paddingLeft="40dp"-->
+                <!--android:paddingRight="40dp"-->
+                <!--android:text="@string/msg_sit_back"-->
+                <!--android:textColor="@android:color/white"-->
+                <!--android:textSize="16dp" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="25dp"-->
+                <!--android:gravity="center_horizontal"-->
+                <!--android:paddingLeft="40dp"-->
+                <!--android:paddingRight="40dp"-->
+                <!--android:text="@string/msg_manual_otp"-->
+                <!--android:textColor="@android:color/white"-->
+                <!--android:textSize="12dp" />-->
+
+            <!--<EditText-->
+                <!--android:id="@+id/inputOtp"-->
+                <!--android:layout_width="120dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@android:color/white"-->
+                <!--android:fontFamily="sans-serif-light"-->
+                <!--android:gravity="center_horizontal"-->
+                <!--android:hint="@string/lbl_enter_otp"-->
+                <!--android:inputType="number"-->
+                <!--android:maxLength="6"-->
+                <!--android:padding="10dp"-->
+                <!--android:textCursorDrawable="@null"-->
+                <!--android:textSize="18dp" />-->
+
+            <!--<Button-->
+                <!--android:id="@+id/btn_verify_otp"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:layout_marginTop="25dp"-->
+                <!--android:background="@color/colorPrimaryDark"-->
+                <!--android:paddingLeft="20dp"-->
+                <!--android:paddingRight="20dp"-->
+                <!--android:text="@string/lbl_submit"-->
+                <!--android:textColor="@android:color/white"-->
+                <!--android:textSize="14dp" />-->
+
+        <!--</LinearLayout>-->
+
+    <!--</com.arvind.fgwallet.helper.MyViewPager>-->
+
+
+    <!--<ProgressBar-->
+        <!--android:id="@+id/progressBar"-->
+        <!--android:layout_width="30dp"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_marginBottom="60dp"-->
+        <!--android:indeterminateTint="@color/colorAccent"-->
+        <!--android:indeterminateTintMode="src_atop"-->
+        <!--android:visibility="gone" />-->
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/layout_edit_mobile"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_marginBottom="50dp"-->
+        <!--android:gravity="center"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/txt_edit_mobile"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:textSize="16dp" />-->
+
+        <!--<ImageButton-->
+            <!--android:id="@+id/btn_edit_mobile"-->
+            <!--android:layout_width="40dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:background="@null"-->
+            <!--android:src="@drawable/ic_edit_mobile" />-->
+    <!--</LinearLayout>-->
+
+    <LinearLayout
+        android:id="@+id/layout_otp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/colorPrimary"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="60dp"
+            android:src="@mipmap/wallet_ic" />
+
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:gravity="center_horizontal"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:text="@string/msg_manual_otp"
+            android:textColor="@android:color/white"
+            android:textSize="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:text="@string/lbl_enter_otp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:background="@android:color/white"
+            android:inputType="number"
+            android:id="@+id/newPin"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:singleLine="true"
+            android:paddingLeft="10dp"
+            android:layout_height="40dp" />
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="35dp"
+
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:id="@+id/btn_verify_otp"
+            android:gravity="center"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:singleLine="true"
+            android:background="@drawable/border_white"
+            android:textSize="20dp"
+            android:text="@string/lbl_submit"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="35dp"
+
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:id="@+id/btn_reend"
+            android:gravity="center"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:singleLine="true"
+            android:background="@drawable/border_white"
+            android:textSize="20dp"
+            android:text="@string/lbl_resend"/>
+
+
+
+    </LinearLayout>
+</RelativeLayout>

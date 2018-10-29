@@ -1,0 +1,36 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <include layout="@layout/tootlbar" />
+
+
+
+    <LinearLayout
+        android:id="@+id/lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:textColor="@color/white">
+
+
+
+    <fragment
+
+        android:id="@+id/wallet_transactions_fragment1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        class = "com.ivan.fgwallet.schildbach.wallet.ui.WalletTransactionsFragment"
+
+        />
+
+    </LinearLayout>
+</LinearLayout>
+

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_reveiced_sent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sent"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="16dip"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_day"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="2018/01/01"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="16dip"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_btc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:text="0.01 BTC"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="16dip"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_memo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:capitalize="sentences"
+            android:inputType="textCapSentences"
+            android:text=" - Memo"
+            android:paddingTop="5dp"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="16dip"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</LinearLayout>

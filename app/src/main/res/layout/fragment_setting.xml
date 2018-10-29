@@ -1,0 +1,294 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context="com.ivan.fgwallet.Fragments.SettingFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/border_white_with_body"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/tv_about"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/about"
+                android:layout_weight="0.8"
+                android:textSize="15dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@android:color/white"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/right_arrow"
+                android:layout_weight="0.2"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginLeft="15dp"
+            android:background="@android:color/white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/tv_recovery"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/recovery_phrase"
+                android:layout_weight="0.8"
+                android:textSize="15dp"
+                android:layout_marginLeft="5dp"
+
+                android:textColor="@android:color/white"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/right_arrow"
+                android:layout_weight="0.2"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/border_white_with_body"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="About"
+                android:layout_weight="0.8"
+                android:textSize="15dp"
+                android:layout_marginLeft="5dp"
+
+                android:textColor="@android:color/white"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/right_arrow"
+                android:layout_weight="0.2"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginLeft="15dp"
+
+            android:background="@android:color/white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Touch ID limit"
+                android:layout_weight="0.8"
+                android:textSize="15dp"
+                android:layout_marginLeft="5dp"
+
+                android:textColor="@android:color/white"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/right_arrow"
+                android:layout_weight="0.2"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginLeft="15dp"
+
+            android:background="@android:color/white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Enable Recive Notificatio"
+                android:layout_weight="0.8"
+                android:textSize="15dp"
+                android:layout_marginLeft="5dp"
+
+                android:textColor="@android:color/white"/>
+
+            <Switch
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/right_arrow"
+                android:layout_marginRight="20dp"
+                android:layout_weight="0.2"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/border_white_with_body"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/tv_change_password"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/change_password"
+                android:layout_weight="0.8"
+                android:textSize="15dp"
+                android:layout_marginLeft="5dp"
+
+                android:textColor="@android:color/white"/>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginLeft="15dp"
+            android:visibility="gone"
+            android:background="@android:color/white"/>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="XXXXXXXX"
+                android:layout_weight="0.8"
+                android:textSize="15dp"
+                android:layout_marginLeft="5dp"
+
+                android:textColor="@android:color/white"/>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginLeft="15dp"
+
+            android:background="@android:color/white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/tv_rescan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/rescan_blockchain"
+                android:layout_weight="0.8"
+                android:textSize="15dp"
+                android:layout_marginLeft="5dp"
+
+                android:textColor="@android:color/white"/>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginLeft="15dp"
+
+            android:background="@android:color/white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/tv_change_language"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/change_language"
+                android:layout_weight="0.8"
+                android:textSize="15dp"
+                android:layout_marginLeft="5dp"
+
+                android:textColor="@android:color/white"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

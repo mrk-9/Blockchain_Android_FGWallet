@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "920782381663",
+    "firebase_url": "https://fwwallet.firebaseio.com",
+    "project_id": "fwwallet",
+    "storage_bucket": "fwwallet.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:920782381663:android:c7dc7b7691a610ea",
+        "android_client_info": {
+          "package_name": "com.ivan.fgwallet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "920782381663-oh8clh81quaklheg5c91rcbvm291egto.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ivan.fgwallet",
+            "certificate_hash": "c296bb185781e54a93a007ee395e8b5cc0d016f0"
+          }
+        },
+        {
+          "client_id": "920782381663-rjebi53ore8491qi4kd9d6ruk0ugv1f7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjwCpbJWWJ9Hq-4qh8ynw1q_wByv4m_fU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "920782381663-rjebi53ore8491qi4kd9d6ruk0ugv1f7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
